@@ -14,5 +14,12 @@
 <body>
 <h1>User ${User} Created</h1>
 
+<h1>Users</h1>
+<ul>
+    <c:forEach items="${Userlist}" var="user">
+        <Li>${user}</Li>
+    </c:forEach>
+</ul>
+
 </body>
 </html>
