@@ -26,7 +26,7 @@ public class UserCreated extends HttpServlet {
             req.setAttribute("User", Username);
             req.setAttribute("Userlist", Userlist);
             req.getRequestDispatcher("/WEB-INF/CreatedUser.jsp").forward(req, resp);
-        }catch (IOException ex){
+        }catch (Exception ex){
             resp.getWriter().write("<H1> 404 </H1>");
             resp.getWriter().append("error: " + ex.getMessage());
 

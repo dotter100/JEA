@@ -46,7 +46,7 @@ import java.util.List;
  * @author mertcaliskan
  */
 @Stateless
-@Path("person")
+@Path("Data")
 public class PersonResource {
 
     @Inject

@@ -40,7 +40,7 @@ package Resource;
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
-@javax.ws.rs.ApplicationPath("resources")
+@javax.ws.rs.ApplicationPath("rest")
 public class ApplicationConfig extends Application {
 
     @Override
