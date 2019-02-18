@@ -10,6 +10,7 @@ import javax.json.JsonArrayBuilder;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import java.util.List;
 
 @Path("users")
 public class UserController {
@@ -18,13 +19,13 @@ public class UserController {
 
     @GET
     @Produces("application/json")
-    public JsonArray getUsers(){
+    public List<User> getUsers(){
         JsonArrayBuilder builder = Json.createArrayBuilder();
 
         for(User u : userService.GetUsers()){
             builder.add(Json.createObjectBuilder().add("name", u.getName()));
         }
-        return builder.build();
+        return userService.GetUsers();
     }
 
 }
