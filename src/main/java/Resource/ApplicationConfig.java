@@ -37,6 +37,8 @@
  */
 package Resource;
 
+import Controlleres.UserController;
+
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
@@ -52,5 +54,6 @@ public class ApplicationConfig extends Application {
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(PersonResource.class);
+        resources.add(UserController.class);
     }
 }

@@ -11,12 +11,11 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-@Path("/users")
+@Path("users")
 public class UserController {
     @Inject
     private UserService  userService;
 
-    @Path("/all")
     @GET
     @Produces("application/json")
     public JsonArray getUsers(){
