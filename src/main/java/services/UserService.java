@@ -1,8 +1,10 @@
 package services;
 
 import Models.User;
+import interceptor.UserInterceptor;
 
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -10,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
+@Interceptors(UserInterceptor.class)
 public class UserService {
     @PersistenceContext
     private EntityManager em;
