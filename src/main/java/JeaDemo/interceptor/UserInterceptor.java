@@ -1,4 +1,4 @@
-package interceptor;
+package JeaDemo.interceptor;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
 
