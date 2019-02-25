@@ -1,7 +1,7 @@
-package services;
+package JeaDemo.services;
 
-import Models.User;
-import interceptor.UserInterceptor;
+import JeaDemo.Models.User;
+import JeaDemo.interceptor.UserInterceptor;
 
 import javax.ejb.Stateless;
 import javax.interceptor.Interceptors;

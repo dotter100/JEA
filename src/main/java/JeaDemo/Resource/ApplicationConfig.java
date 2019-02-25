@@ -35,39 +35,25 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
-package Resource;
+package JeaDemo.Resource;
 
-import javax.ejb.Stateless;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.util.List;
+import JeaDemo.Controlleres.UserController;
 
-/**
- * @author mertcaliskan
- */
-@Stateless
-public class PersonDao {
+import javax.ws.rs.core.Application;
+import java.util.Set;
 
-    @PersistenceContext
-    private EntityManager entityManager;
+@javax.ws.rs.ApplicationPath("rest")
+public class ApplicationConfig extends Application {
 
-    public List<Person> getAll() {
-        return entityManager.createNamedQuery("Person.getAll", Person.class).getResultList();
+    @Override
+    public Set<Class<?>> getClasses() {
+        Set<Class<?>> resources = new java.util.HashSet();
+        addRestResourceClasses(resources);
+        return resources;
     }
 
-    public Person find(Long id) {
-        return entityManager.createNamedQuery("Person.findOne", Person.class).setParameter("id", id).getSingleResult();
-    }
-
-    public void save(Person person) {
-        entityManager.persist(person);
-    }
-
-    public void update(Person person) {
-        entityManager.merge(person);
-    }
-
-    public void delete(Person person) {
-        entityManager.remove(person);
+    private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(PersonResource.class);
+        resources.add(UserController.class);
     }
 }

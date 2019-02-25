@@ -35,7 +35,7 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
-package Resource;
+package JeaDemo.Resource;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;

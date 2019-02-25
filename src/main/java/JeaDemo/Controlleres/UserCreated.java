@@ -1,6 +1,6 @@
-package Controlleres;
+package JeaDemo.Controlleres;
 
-import services.UserService;
+import JeaDemo.services.UserService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

@@ -1,4 +1,4 @@
-package Controlleres;
+package JeaDemo.Controlleres;
 
 import javax.ws.rs.ApplicationPath;
 

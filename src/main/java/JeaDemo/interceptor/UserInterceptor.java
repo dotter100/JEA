@@ -8,7 +8,6 @@ public class UserInterceptor {
     public Object intercept(InvocationContext context) throws Exception{
         System.out.println("UserInterceptor - Before methode : "+ context.getMethod().getName());
         Object result = context.proceed();
-        c
         System.out.println("UserInterceptor - After methode : "+ context.getMethod().getName());
         return result;
     }
