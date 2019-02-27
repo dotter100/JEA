@@ -21,7 +21,7 @@ public class UserControllerWeb  extends HttpServlet {
             List<String> Userlist = userService.GetUsernames();
             req.setAttribute("Userlist", Userlist);
 
-            req.getRequestDispatcher("/WEB-INF/User.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/UserTest.jsp").forward(req, resp);
 
     }
 }

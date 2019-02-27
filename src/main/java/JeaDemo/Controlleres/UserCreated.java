@@ -23,7 +23,7 @@ public class UserCreated extends HttpServlet {
             String Username = req.getParameter("UserName");
             userService.create(Username);
             List<String> Userlist = userService.GetUsernames();
-            req.setAttribute("User", Username);
+            req.setAttribute("UserTest", Username);
             req.setAttribute("Userlist", Userlist);
             req.getRequestDispatcher("/WEB-INF/CreatedUser.jsp").forward(req, resp);
         }catch (Exception ex){
