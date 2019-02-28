@@ -1,6 +1,10 @@
 package Stocks.Tests;
 
 import Stocks.Models.User;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.google.gson.Gson;
@@ -10,6 +14,7 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +22,9 @@ import java.util.List;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 public class UserTest {
 
@@ -51,8 +59,13 @@ public class UserTest {
     }
 
     @Test
-    public void Login(){
+    public void Login() throws UnsupportedEncodingException {
         User u = new User("TestName2", "TestPassword2");
+
+        Algorithm algorithm = Algorithm.HMAC256("secret");
+        String token = JWT.create()
+                .withIssuer("Bart")
+                .sign(algorithm);
 
 
         WireMock wiremock = new WireMock(8888);
@@ -60,18 +73,27 @@ public class UserTest {
         wiremock.register(post(urlEqualTo("/JEAORM/User/login"))
                 .withHeader("Content-Type", containing("json"))
                 .withRequestBody(containing("TestPassword2"))
+                .withRequestBody(containing("TestName2"))
                 .willReturn(aResponse()
                         .withStatus(200)
-                        .withBody("")));
+                        .withBody(token)));
 
 
         //given().when().get("JEAORM/CreateUser").then().statusCode(200);
-        given()
+        Response response = given()
                 .port(8888)
                 .contentType("application/json")
                 .body(u)
                 .when().post("/JEAORM/User/login").then()
-                .statusCode(200);
+                .statusCode(200).extract().response();
+
+
+        JWTVerifier verifier = JWT.require(algorithm)
+                .withIssuer("Bart")
+                .build(); //Reusable verifier instance
+        DecodedJWT jwt = verifier.verify(token);
+
+        assertNotNull(jwt);
         wiremock.verifyThat(WireMock.postRequestedFor(urlEqualTo("/JEAORM/User/login")));
 
     }
@@ -99,7 +121,7 @@ public class UserTest {
         User user = gson.fromJson(response.getBody().print(),User.class);
 
 
-        Assert.assertEquals(u.toString(), user.toString());
+        assertEquals(u.toString(), user.toString());
         wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/User/0")));
 
     }

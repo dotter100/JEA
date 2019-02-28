@@ -48,8 +48,8 @@
       <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+            <state relative-caret-position="315">
+              <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +60,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state relative-caret-position="216">
+              <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -338,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="JUnit.UserTest.Login">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -486,6 +486,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="UserTest.Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Stocks.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Stocks.Tests" />
+      <option name="MAIN_CLASS_NAME" value="Stocks.Tests.UserTest" />
+      <option name="METHOD_NAME" value="Login" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -529,11 +552,13 @@
       <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.UserTest.GetUsers" />
       <item itemvalue="JUnit.UserTest.GetUser" />
+      <item itemvalue="JUnit.UserTest.Login" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.Login" />
         <item itemvalue="JUnit.UserTest.GetUser" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.GetUsers" />
       </list>
     </recent_temporary>
@@ -552,44 +577,44 @@
       <workItem from="1550476841326" duration="5161000" />
       <workItem from="1550684365285" duration="12526000" />
       <workItem from="1551253023793" duration="30000" />
-      <workItem from="1551351264569" duration="4146000" />
+      <workItem from="1551351264569" duration="9250000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_GetUsers - 2019.02.25 at 16h 58m 30s.xml">
-      <configuration name="UserTest.GetUsers" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 19m 14s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_GetUsers - 2019.02.25 at 17h 02m 35s.xml">
-      <configuration name="UserTest.GetUsers" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 20m 51s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_GetUsers - 2019.02.25 at 17h 05m 18s.xml">
-      <configuration name="UserTest.GetUsers" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 22m 06s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_GetUser - 2019.02.25 at 17h 06m 15s.xml">
-      <configuration name="UserTest.GetUser" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 23m 06s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_GetUser - 2019.02.25 at 17h 07m 07s.xml">
-      <configuration name="UserTest.GetUser" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 24m 45s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_GetUser - 2019.02.28 at 11h 58m 18s.xml">
-      <configuration name="UserTest.GetUser" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 25m 44s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2019.02.28 at 12h 56m 33s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 28m 03s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2019.02.28 at 12h 59m 41s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 29m 21s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2019.02.28 at 13h 03m 29s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 30m 28s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2019.02.28 at 13h 05m 04s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="UserTest_Login - 2019.02.28 at 14h 58m 53s.xml">
+      <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54028000" />
+    <option name="totallyTimeSpent" value="59132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,8 +700,20 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1013,15 +1050,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        <state relative-caret-position="216">
+          <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+        <state relative-caret-position="315">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
