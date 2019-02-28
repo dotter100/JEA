@@ -5,8 +5,7 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.response.Response;
+import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -15,9 +14,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.jayway.restassured.RestAssured.given;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
+import static io.restassured.RestAssured.given;
 
 public class UserTest {
 
@@ -31,6 +30,7 @@ public class UserTest {
         WireMock wiremock = new WireMock(8888);
 
         wiremock.register(put(urlEqualTo("/JEAORM/CreateUser"))
+                .withHeader("Content-Type", containing("json"))
                 .withRequestBody(containing("TestName"))
                 .willReturn(aResponse()
                         .withStatus(200)
@@ -40,7 +40,7 @@ public class UserTest {
         //given().when().get("JEAORM/CreateUser").then().statusCode(200);
         given()
                 .port(8888)
-               // .contentType("application/json")
+                .contentType("application/json")
                 .body(u)
                 .when().put("/JEAORM/CreateUser").then()
                 .statusCode(200);
@@ -58,6 +58,7 @@ public class UserTest {
         WireMock wiremock = new WireMock(8888);
 
         wiremock.register(post(urlEqualTo("/JEAORM/User/login"))
+                .withHeader("Content-Type", containing("json"))
                 .withRequestBody(containing("TestPassword2"))
                 .willReturn(aResponse()
                         .withStatus(200)
@@ -80,9 +81,6 @@ public class UserTest {
         User u = new User("TestName2", "TestPassword2");
 
         Gson gson = new GsonBuilder().create();
-
-
-
 
         WireMock wiremock = new WireMock(8888);
 
