@@ -84,23 +84,23 @@ public class UserTest {
 
         WireMock wiremock = new WireMock(8888);
 
-        wiremock.register(get(urlEqualTo("/JEAORM/User"))
+        wiremock.register(get(urlEqualTo("/JEAORM/User/0"))
                 .willReturn(aResponse()
                         .withStatus(200)
-                        .withHeader("Content-Type", "application/json")
+                        .withHeader("content-type", "application/json")
                         .withBody(gson.toJson(u))));
 
-        Response response = given()
+        Response response = given().pathParam("ID", 0)
                 .port(8888)
                 .headers("Content-Type", "application/json", "Accept", "application/json")
-                .when().get("/JEAORM/User").then()
+                .when().get("/JEAORM/User/{ID}").then()
                 .contentType("application/json").extract().response();
 
         User user = gson.fromJson(response.getBody().print(),User.class);
 
 
         Assert.assertEquals(u.toString(), user.toString());
-        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/User")));
+        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/User/0")));
 
     }
 }
