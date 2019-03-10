@@ -35,14 +35,16 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
-package JeaDemo.Resource;
+package Stocks.Resource;
 
-//import JeaDemo.Controlleres.UserController;
+
+
+import Stocks.Controlleres.UserController;
 
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
-@javax.ws.rs.ApplicationPath("rest")
+@javax.ws.rs.ApplicationPath("Stocks")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -53,7 +55,6 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(PersonResource.class);
-        //resources.add(UserController.class);
+        resources.add(UserController.class);
     }
 }

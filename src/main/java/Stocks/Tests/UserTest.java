@@ -14,10 +14,15 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
@@ -124,5 +129,20 @@ public class UserTest {
         assertEquals(u.toString(), user.toString());
         wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/User/0")));
 
+    }
+
+
+    @Test
+    public void validatortest(){
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        Validator validator = factory.getValidator();
+
+        User user = new User("test","");
+        Set<ConstraintViolation<User>> violations = validator.validate(user);
+
+        for (ConstraintViolation<User> violation : violations) {
+            //log.error(violation.getMessage());
+            System.out.println(violation.getMessage());
+        }
     }
 }

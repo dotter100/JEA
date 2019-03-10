@@ -1,11 +1,19 @@
 package Stocks.Models;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class User {
 
     private int ID;
+    @NotNull(message = "Name cannot be null")
     private String Name;
+    @NotEmpty(message = "password cannot be Empty")
     private String Password;
 
+    public User() {
+
+    }
     public User(String name, String password) {
         Name = name;
         Password = password;
