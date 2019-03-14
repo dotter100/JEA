@@ -7,12 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc59ed0-1928-49d6-98af-4612a27c72d3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Controlleres/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Controlleres/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Controlleres/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Controlleres/UserControllerWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Controlleres/UserCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Resource/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Resource/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Resource/PersonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/PersonResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/Resource/PersonResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/interceptor/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JeaDemo/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JEAORM/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JEAORM/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/idk/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +56,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glassfish-web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/glassfish-web.xml">
+          <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Roles.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="284">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +132,17 @@
       <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="136">
               <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,83 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="TestIdentityStore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#2461#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#2407#2408#0" expanded="true" />
-                <element signature="e#2458#2459#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="27" column="7" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="68">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,9 +170,16 @@
         <option value="cdi.beans_1_1" />
         <option value="FxmlFile" />
         <option value="Jsp File" />
+        <option value="Enum" />
+        <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wire</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,17 +215,25 @@
         <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Login.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/glassfish-web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/JaxRsActivator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" />
       </list>
     </option>
   </component>
@@ -213,8 +246,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -228,10 +261,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="9" />
-    <option name="width" value="2184" />
-    <option name="height" value="1404" />
+    <option name="x" value="1188" />
+    <option name="width" value="1221" />
+    <option name="height" value="657" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -241,9 +273,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,46 +286,30 @@
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
               <item name="JEA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JEA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JEA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JEA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="JeaDemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
               <item name="JEA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="JeaDemo" type="462c0819:PsiDirectoryNode" />
               <item name="Controlleres" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
               <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="JeaDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="JeaDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
@@ -301,8 +317,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="JeaDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +360,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
@@ -379,6 +393,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -392,7 +414,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/payara-5.184/payara5/glassfish/domains/domain1/lib/mysql-connector-java-8.0.15.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Berend/JEA_week_1-2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -401,16 +423,22 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Resource" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Stocks.Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Stocks.Controlleres" />
       <recent name="Stocks.Resource" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Stocks.Models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Resource" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,7 +453,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="GlassFish Server.Glassfish server">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -690,14 +718,13 @@
       <workItem from="1550684365285" duration="12526000" />
       <workItem from="1551253023793" duration="30000" />
       <workItem from="1551351264569" duration="11483000" />
-      <workItem from="1552212619025" duration="4613000" />
+      <workItem from="1552212619025" duration="24400000" />
+      <workItem from="1552563647808" duration="250000" />
+      <workItem from="1552564346512" duration="2924000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_Login - 2019.02.28 at 14h 29m 21s.xml">
-      <configuration name="UserTest.Login" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_Login - 2019.02.28 at 14h 30m 28s.xml">
       <configuration name="UserTest.Login" configurationId="JUnit" />
     </history-entry>
@@ -725,9 +752,12 @@
     <history-entry file="UserTest - 2019.03.10 at 15h 36m 56s.xml">
       <configuration name="UserTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest - 2019.03.10 at 15h 39m 29s.xml">
+      <configuration name="UserTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65978000" />
+    <option name="totallyTimeSpent" value="88939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,11 +770,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50034696" side_tool="true" weight="0.3296837" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.499653" weight="0.32916147" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4344086" side_tool="true" visible="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49892473" weight="0.32916147" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="3" />
@@ -755,18 +784,18 @@
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49063152" weight="0.3979975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48243728" weight="0.3979975" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916147" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47883415" weight="0.32916147" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4752688" weight="0.32916147" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.499653" weight="0.32916147" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7519713" weight="0.32916147" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916147" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6634282" visible="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5655914" visible="true" weight="0.32916147" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916147" />
       <window_info id="Persistence" order="2" sideWeight="0.5006258" side_tool="true" weight="0.2580645" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49626866" visible="true" weight="0.26164874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49626866" visible="true" weight="0.3204301" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.50373137" side_tool="true" weight="0.2580645" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -790,69 +819,40 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/HelloServlet.java</url>
+          <url>file://$PROJECT_DIR$/JeaDemo/Controlleres/HelloServlet.java</url>
           <line>20</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java</url>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="45" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/User.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/PersonResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml.fxml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/org/jboss/logging/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="473" column="187" selection-start-line="473" selection-start-column="187" selection-end-line="473" selection-end-column="187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/CreatedUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -868,14 +868,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/PersonDao.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Resource/PersonDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
@@ -883,17 +876,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/APIinterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/Person.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Resource/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="47" column="41" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/interceptor/UserInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1009,14 +995,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/PersonResource.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Resource/PersonResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
@@ -1037,41 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserControllerWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserCreated.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/HelloServlet.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/HelloServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
@@ -1081,81 +1026,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/Application.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="27" column="7" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/Resource/ApplicationConfig.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Resource/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idk/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="127">
           <caret line="46" column="36" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#2461#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#2407#2408#0" expanded="true" />
-            <element signature="e#2458#2459#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java">
+    <entry file="file://$PROJECT_DIR$/JeaDemo/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="382">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="2" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/UserControllerWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/UserCreated.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/JaxRsActivator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="14" column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#509#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/glassfish-web.xml">
+      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1164,8 +1151,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

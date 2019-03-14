@@ -1,7 +1,7 @@
 package Stocks.Logic;
 
-import JeaDemo.interceptor.UserInterceptor;
 import Stocks.Models.User;
+import interceptor.UserInterceptor;
 
 import javax.ejb.Stateless;
 import javax.interceptor.Interceptors;
@@ -16,7 +16,6 @@ public class Validator {
     public Set<ConstraintViolation<User>> validator(User user){
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         javax.validation.Validator validator = factory.getValidator();
-
 
         Set<ConstraintViolation<User>> violations = validator.validate(user);
 

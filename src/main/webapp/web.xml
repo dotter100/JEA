@@ -19,6 +19,16 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>javax.ws.rs.core.Application</servlet-name>
-        <url-pattern>/Stocks/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>fileRealm</realm-name>
+        <form-login-config>
+            <form-login-page>WEB-INF/Login.xhtml</form-login-page>
+            <form-error-page></form-error-page>
+        </form-login-config>
+    </login-config>
+
+
 </web-app>
