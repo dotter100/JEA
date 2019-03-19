@@ -35,28 +35,51 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
-package Stocks.Resource;
+package Stocks.Controlleres;
 
+import Stocks.security.Constants;
+import Stocks.security.TokenProvider;
 
-
-import Stocks.Controlleres.UserController;
-
-import javax.annotation.security.DeclareRoles;
-import javax.ws.rs.core.Application;
+import java.security.Principal;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.inject.Inject;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.security.enterprise.SecurityContext;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
+import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
 
-@javax.ws.rs.ApplicationPath("Stocks")
-@DeclareRoles({"ADMIN", "USER"})
-public class ApplicationConfig extends Application {
+@Path("auth")
+public class AuthController {
 
-    @Override
-    public Set<Class<?>> getClasses() {
-        Set<Class<?>> resources = new java.util.HashSet();
-        addRestResourceClasses(resources);
-        return resources;
+    private static final Logger LOGGER = Logger.getLogger(AuthController.class.getName());
+
+    @Inject
+    private SecurityContext securityContext;
+
+
+    @GET
+    @Path("login")
+    public Response login() {
+        LOGGER.log(Level.INFO, "login");
+        Principal t = securityContext.getCallerPrincipal();
+        if (securityContext.getCallerPrincipal() != null) {
+            JsonObject result = Json.createObjectBuilder()
+                    .add("user", securityContext.getCallerPrincipal().getName())
+                    .build();
+            return Response.ok(result).build();
+        }
+        return Response.status(UNAUTHORIZED).build();
     }
 
-    private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(UserController.class);
-    }
+
+
+
 }

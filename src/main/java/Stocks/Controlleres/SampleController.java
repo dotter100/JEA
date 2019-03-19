@@ -35,28 +35,63 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
-package Stocks.Resource;
+package Stocks.Controlleres;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.annotation.security.PermitAll;
+import javax.inject.Inject;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.security.enterprise.SecurityContext;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
 
+@Path("sample")
+public class SampleController {
 
-import Stocks.Controlleres.UserController;
+    private static final Logger LOGGER = Logger.getLogger(SampleController.class.getName());
 
-import javax.annotation.security.DeclareRoles;
-import javax.ws.rs.core.Application;
-import java.util.Set;
+    @Inject
+    private SecurityContext securityContext;
 
-@javax.ws.rs.ApplicationPath("Stocks")
-@DeclareRoles({"ADMIN", "USER"})
-public class ApplicationConfig extends Application {
-
-    @Override
-    public Set<Class<?>> getClasses() {
-        Set<Class<?>> resources = new java.util.HashSet();
-        addRestResourceClasses(resources);
-        return resources;
+    @GET
+    @Path("read")
+//    @PermitAll
+    public Response read() {
+        LOGGER.log(Level.INFO, "read");
+        JsonObject result = Json.createObjectBuilder()
+                .add("user", securityContext.getCallerPrincipal() != null
+                        ? securityContext.getCallerPrincipal().getName() : "Anonymous")
+                .add("message", "Read resource")
+                .build();
+        return Response.ok(result).build();
     }
 
-    private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(UserController.class);
+    @POST
+    @Path("write")
+//    @RolesAllowed({USER, ADMIN})
+    public Response write() {
+        LOGGER.log(Level.INFO, "write");
+        JsonObject result = Json.createObjectBuilder()
+                .add("user", securityContext.getCallerPrincipal().getName())
+                .add("message", "Write resource")
+                .build();
+        return Response.ok(result).build();
+    }
+
+    @DELETE
+    @Path("delete")
+//    @RolesAllowed({ADMIN})
+    public Response delete() {
+        LOGGER.log(Level.INFO, "delete");
+        JsonObject result = Json.createObjectBuilder()
+                .add("user", securityContext.getCallerPrincipal().getName())
+                .add("message", "Delete resource")
+                .build();
+        return Response.ok(result).build();
     }
 }

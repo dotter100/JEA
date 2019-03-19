@@ -11,6 +11,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
+import javax.servlet.annotation.ServletSecurity;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -19,7 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Path("StockUser")
-@RolesAllowed("USER")
+//@RolesAllowed("USER")
+@ServletSecurity
 public class UserController {
    @Inject
    public Validator validator;
