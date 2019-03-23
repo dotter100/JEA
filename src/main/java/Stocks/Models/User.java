@@ -9,11 +9,14 @@ import java.util.List;
 @Entity
 @Table(name ="accounts")
 @Cacheable(false)
+@NamedQuery(name = "login", query = "select  u  from User u where u.Name = :name  AND u.Password = :password")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int ID;
+
     @NotNull(message = "Name cannot be null")
+    @Column(unique = true)
     private String Name;
     @NotEmpty(message = "password cannot be Empty")
     private String Password;

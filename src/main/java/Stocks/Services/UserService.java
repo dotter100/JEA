@@ -41,4 +41,8 @@ public class UserService {
         em.getTransaction().commit();
         em.flush();
     }
+
+    public User GetUser(String Username, String password){
+        return em.createNamedQuery("login", User.class).setParameter("name", Username).setParameter("password", password).getSingleResult();
+    }
 }

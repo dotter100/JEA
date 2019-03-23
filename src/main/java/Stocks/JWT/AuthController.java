@@ -1,14 +1,19 @@
 package Stocks.JWT;
 
+import Stocks.Models.User;
+import Stocks.Services.UserService;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/authentication")
 public class AuthController {
+    @Inject
+    private UserService userService;
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
@@ -38,9 +43,11 @@ public class AuthController {
     private void authenticate(String username, String password) throws Exception {
         // Authenticate against a database, LDAP, file or whatever
         // Throw an Exception if the credentials are invalid
-        if(username.contains("test") && password.contains("test2")){
+        User user = userService.GetUser(username,password);
+        if(user != null){
 
-        }else {
+        }
+        else {
             throw new Exception();
         }
     }
