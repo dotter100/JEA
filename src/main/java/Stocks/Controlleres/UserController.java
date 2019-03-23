@@ -3,6 +3,7 @@ package Stocks.Controlleres;
 
 
 
+import Stocks.JWT.JWT;
 import Stocks.Logic.Validator;
 import Stocks.Models.User;
 import Stocks.Services.UserService;
@@ -30,6 +31,7 @@ public class UserController {
     private UserService userService;
 
     @GET
+    @JWT
     @Produces("application/json")
     public List<User> getUsers(){
         List<User> list = new ArrayList<User>();
