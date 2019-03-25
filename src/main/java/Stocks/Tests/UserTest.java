@@ -88,6 +88,8 @@ public class UserTest {
                 .statusCode(200).extract().response();
 
 
+
+
         JWTVerifier verifier = JWT.require(algorithm)
                 .withIssuer("Bart")
                 .build(); //Reusable verifier instance
