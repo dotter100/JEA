@@ -1,11 +1,21 @@
 package Stocks.Models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Stocks {
 
     private int price;
+    @Id
     private String name;
+    @ManyToOne
     private Company company;
     private Valuta valuta;
+
+    public Stocks() {
+    }
 
     public Stocks(int price, String name, Company company) {
         this.price = price;

@@ -38,6 +38,8 @@ public class User {
     public void setRole(List<Roles> role) {
         this.role = role;
     }
+    @OneToMany
+    private List<Portfolio> portfolios = new ArrayList<>();
 
     public User() {
 
@@ -63,6 +65,15 @@ public class User {
 
     public int getID() {
         return ID;
+    }
+
+
+    public List<Portfolio> getPortfolios() {
+        return portfolios;
+    }
+
+    public void AddPortfolios(Portfolio portfolios) {
+        this.portfolios.add(portfolios);
     }
 
     @Override
