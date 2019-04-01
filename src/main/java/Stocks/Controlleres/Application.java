@@ -7,8 +7,8 @@ import javax.ws.rs.ApplicationPath;
 
 
 @ApplicationScoped
-@ApplicationPath("Stock")
-@DeclareRoles({"ADMIN", "USER"})
+@ApplicationPath("idk")
+
 //@BasicAuthenticationMechanismDefinition(realmName = "fileRealm")
 public class Application extends javax.ws.rs.core.Application {
 }

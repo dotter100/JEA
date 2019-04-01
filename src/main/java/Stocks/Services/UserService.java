@@ -45,4 +45,8 @@ public class UserService {
     public User GetUser(String Username, String password){
         return em.createNamedQuery("login", User.class).setParameter("name", Username).setParameter("password", password).getSingleResult();
     }
+
+    public User GetUserID(int id) {
+        return em.createNamedQuery("ID", User.class).setParameter("ID", id).getSingleResult();
+    }
 }

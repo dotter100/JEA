@@ -4,6 +4,7 @@ import Stocks.Models.User;
 import Stocks.Services.UserService;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import net.bytebuddy.implementation.bytecode.Throw;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -15,6 +16,8 @@ public class AuthController {
     @Inject
     private UserService userService;
 
+
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -23,15 +26,9 @@ public class AuthController {
 
 
         try {
-//            String username = credentials.getUsername();
-//            String password = credentials.getPassword();
-
-            // Authenticate the user using the credentials provided
-            authenticate(username, password);
-
+            User u = authenticate(username, password);
             // Issue a token for the user
-            String token = issueToken(username);
-
+            String token = issueToken(u);
             // Return the token on the response
             return Response.ok(token).build();
 
@@ -40,19 +37,19 @@ public class AuthController {
         }
     }
 
-    private void authenticate(String username, String password) throws Exception {
+    private User authenticate(String username, String password) throws Exception {
         // Authenticate against a database, LDAP, file or whatever
         // Throw an Exception if the credentials are invalid
         User user = userService.GetUser(username,password);
         if(user != null){
-
+            return user;
         }
         else {
             throw new Exception();
         }
     }
 
-    private String issueToken(String username) {
+    private String issueToken(User user) throws Exception {
         // Issue a token (can be a random String persisted to a database or a JWT token)
         // The issued token must be associated to a user
         // Return the issued token
@@ -60,13 +57,16 @@ public class AuthController {
             Algorithm algorithm = Algorithm.HMAC256("secret");
             String token = JWT.create()
                     .withIssuer("Bart")
-                    .withClaim("User",username)
+                    .withClaim("User",user.getName())
+                    .withClaim("ID",user.getID())
+                    .withClaim("Roles" , String.valueOf(user.getRole()))
                     .sign(algorithm);
             return token;
 
 
         }catch (Exception e){
-           return "";
+            throw new Exception();
+
         }
 
     }

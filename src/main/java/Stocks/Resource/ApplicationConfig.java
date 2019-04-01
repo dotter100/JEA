@@ -39,14 +39,15 @@ package Stocks.Resource;
 
 
 
-import Stocks.Controlleres.UserController;
+import Stocks.Controlleres.Stocks.PortfolioController;
+import Stocks.Controlleres.Stocks.StocksController;
+import Stocks.Controlleres.Stocks.UserController;
 
-import javax.annotation.security.DeclareRoles;
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
-@javax.ws.rs.ApplicationPath("Stocks")
-@DeclareRoles({"ADMIN", "USER"})
+@javax.ws.rs.ApplicationPath("API")
+
 public class ApplicationConfig extends Application {
 
     @Override
@@ -57,6 +58,9 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
+
         resources.add(UserController.class);
+        resources.add(PortfolioController.class);
+        resources.add(StocksController.class);
     }
 }

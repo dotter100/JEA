@@ -3,8 +3,10 @@ package Stocks.Models;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name = "stockname", query = "select  u  from Stocks u where u.name = :name")
 public class Stocks {
 
     private int price;

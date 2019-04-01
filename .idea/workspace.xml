@@ -10,10 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc59ed0-1928-49d6-98af-4612a27c72d3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,77 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Portfolio.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java">
+      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StocksTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding>
-                <element signature="e#1726#1727#0" expanded="true" />
-                <element signature="e#1759#1760#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1864#1865#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Portfolio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stocks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="369">
+              <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,47 +57,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Roles.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyStock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java">
+      <file leaf-file-name="PortfolioController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="748">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,8 +88,71 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="21" selection-start-line="23" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="69" column="21" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="69" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthentictedUserProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Valuta.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="69" column="37" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,6 +174,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>wire</find>
+      <find>aut</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,13 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Resource/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controlleres/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JeaDemo/Controlleres/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JeaDemo/Resource/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/JeaDemo/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Login.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Service/UserService.java" />
@@ -235,10 +212,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/security/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/security/AuthenticationIdentityStore.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/SampleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/HelloServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java" />
@@ -246,20 +221,29 @@
         <option value="$PROJECT_DIR$/JeaDemo/JWT/Credentials.java" />
         <option value="$PROJECT_DIR$/JeaDemo/JWT/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/JWT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java" />
       </list>
     </option>
   </component>
@@ -352,6 +336,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Stocks" type="462c0819:PsiDirectoryNode" />
+              <item name="Controlleres" type="462c0819:PsiDirectoryNode" />
+              <item name="Stocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Stocks" type="462c0819:PsiDirectoryNode" />
               <item name="JWT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -361,7 +355,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Stocks" type="462c0819:PsiDirectoryNode" />
+              <item name="JWT" type="462c0819:PsiDirectoryNode" />
+              <item name="Authenticated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Stocks" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Stocks" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
@@ -425,25 +438,28 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Stocks.Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\JWT" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Stocks.Services" />
+      <recent name="Stocks.Controlleres.Stocks" />
+      <recent name="Stocks.Tests" />
+      <recent name="Stocks.Controlleres" />
+      <recent name="Stocks.Resource" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks" />
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java" />
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Stocks.Tests" />
-      <recent name="Stocks.Controlleres" />
-      <recent name="Stocks.Resource" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Stocks.Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -784,17 +800,11 @@
       <workItem from="1553089744372" duration="8093000" />
       <workItem from="1553499484507" duration="10271000" />
       <workItem from="1553596579483" duration="3292000" />
-      <workItem from="1553954146743" duration="1613000" />
+      <workItem from="1553954146743" duration="4763000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StocksTest - 2019.03.25 at 09h 32m 08s.xml">
-      <configuration name="StocksTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StocksTest - 2019.03.25 at 09h 38m 06s.xml">
-      <configuration name="StocksTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StocksTest_GetStocksName - 2019.03.25 at 10h 12m 43s.xml">
       <configuration name="StocksTest.GetStocksName" configurationId="JUnit" />
     </history-entry>
@@ -819,9 +829,15 @@
     <history-entry file="Portfolio_ADDPortfolios - 2019.03.30 at 15h 23m 49s.xml">
       <configuration name="Portfolio.ADDPortfolios" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Portfolio - 2019.03.30 at 15h 25m 23s.xml">
+      <configuration name="Portfolio" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Portfolio - 2019.03.30 at 15h 26m 04s.xml">
+      <configuration name="Portfolio" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153394000" />
+    <option name="totallyTimeSpent" value="156544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,10 +873,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7483871" weight="0.32916147" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916147" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5562724" visible="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5562724" visible="true" weight="0.32916147" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49964157" weight="0.32916147" />
       <window_info id="Persistence" order="2" sideWeight="0.5006258" side_tool="true" weight="0.2580645" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.21863799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.21863799" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.3297491" />
       <window_info id="Web" order="2" sideWeight="0.5051975" side_tool="true" weight="0.32544804" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -908,42 +924,6 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Stocks/security/AuthenticationIdentityStore.java</url>
           <line>71</line>
           <properties />
@@ -966,12 +946,6 @@
           <line>87</line>
           <properties />
           <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Stocks/security/TokenProvider.java</url>
@@ -1022,36 +996,6 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java</url>
           <line>91</line>
           <properties />
@@ -1072,48 +1016,10 @@
           <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="91" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/LOGGING.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Logging/AuditModule.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/JaxRsActivator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="14" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-web.xml" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/security/auth/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
       <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1165,13 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="61" column="1" selection-start-line="47" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1200,24 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.0.Final/validation-api-2.0.0.Final.jar!/javax/validation/constraints/AssertFalse.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="83" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -1232,20 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1262,16 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1281,60 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="21" selection-start-line="23" selection-start-column="8" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,10 +1177,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="79" column="63" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1378,50 +1253,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="153">
+          <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
             <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthenticatedUser.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="13" column="118" selection-start-line="13" selection-start-column="118" selection-end-line="13" selection-end-column="118" />
           <folding>
             <element signature="e#1726#1727#0" expanded="true" />
             <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
+        <state relative-caret-position="69">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding>
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,13 @@
 package Stocks.JWT;
 
+import Stocks.JWT.Authenticated.AuthenticatedUser;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
 import javax.annotation.Priority;
+import javax.enterprise.event.Event;
+import javax.inject.Inject;
 import javax.ws.rs.Priorities;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
@@ -20,6 +23,10 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 
     private static final String REALM = "example";
     private static final String AUTHENTICATION_SCHEME = "Bearer";
+
+    @Inject
+    @AuthenticatedUser
+    Event<Integer> userAuthenticatedEvent;
 
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
@@ -76,5 +83,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                 .withIssuer("Bart")
                 .build(); //Reusable verifier instance
         DecodedJWT jwt = verifier.verify(token);
+
+        userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
     }
 }

@@ -9,7 +9,11 @@ import java.util.List;
 @Entity
 @Table(name ="accounts")
 @Cacheable(false)
-@NamedQuery(name = "login", query = "select  u  from User u where u.Name = :name  AND u.Password = :password")
+@NamedQueries({
+        @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID"),
+        @NamedQuery(name = "login", query = "select  u  from User u where u.Name = :name  AND u.Password = :password")
+})
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "PortfolioID", query = "select  u  from Portfolio u where u.ID = :ID"),
+        @NamedQuery(name = "PortfolioName", query = "select  u  from Portfolio u where u.Name = :name")
+})
+
 public class Portfolio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -12,6 +17,7 @@ public class Portfolio {
     private String Name;
     @OneToMany
     private List<BuyStock> stocks;
+
 
     public Portfolio() {
     }
