@@ -36,7 +36,6 @@ public class UserService {
 
     public void createUser(User user){
         em.getTransaction().begin();
-
         em.persist(user);
         em.getTransaction().commit();
         em.flush();

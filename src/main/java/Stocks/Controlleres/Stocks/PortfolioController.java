@@ -18,7 +18,7 @@ import javax.ws.rs.*;
 import java.util.List;
 
 @Path("Portfolio")
-//@RolesAllowed("USER")
+
 @JWT
 public class PortfolioController {
    @Inject
@@ -38,22 +38,20 @@ public class PortfolioController {
 
     }
 
-
+    @Path("name")
     @POST
-    @JWT
-    @Consumes("application/json")
     @Produces("application/json")
     public List<Portfolio> GetPortfolioName(String portfolioname){
         return portfolioService.GetPortfolio(portfolioname);
     }
-
+    @Path("ID")
     @POST
     @Consumes("application/json")
     @Produces("application/json")
     public List<Portfolio> GetPortfolioID(int id){
         return portfolioService.GetPortfolio(id);
     }
-
+    @Path("Update")
     @POST
     @Consumes("application/json")
     @Produces("application/json")

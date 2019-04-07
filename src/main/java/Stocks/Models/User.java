@@ -1,5 +1,11 @@
 package Stocks.Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -13,7 +19,7 @@ import java.util.List;
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID"),
         @NamedQuery(name = "login", query = "select  u  from User u where u.Name = :name  AND u.Password = :password")
 })
-
+@JsonIgnoreProperties(ignoreUnknown = false)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,26 +28,19 @@ public class User {
     @NotNull(message = "Name cannot be null")
     @Column(unique = true)
     private String Name;
+    @JsonIgnore
     @NotEmpty(message = "password cannot be Empty")
     private String Password;
 
 
-
-
-    @ElementCollection(targetClass = Roles.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "USERS_GROUPS",
-            joinColumns       = @JoinColumn(name = "ID", nullable=false),
-            uniqueConstraints = { @UniqueConstraint(columnNames={"ID","groupname"}) } )
-    @Enumerated(EnumType.STRING)
-    @Column(name="groupname", length=64, nullable=false)
-    private List<Roles> role;
-
-    public List<Roles> getRole() {
+    private Roles role;
+    public Roles getRole() {
         return role;
     }
-    public void setRole(List<Roles> role) {
+    public void setRole(Roles role) {
         this.role = role;
     }
+    @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany
     private List<Portfolio> portfolios = new ArrayList<>();
 
@@ -61,11 +60,10 @@ public class User {
         return Name;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return Password;
     }
-
-
 
     public int getID() {
         return ID;

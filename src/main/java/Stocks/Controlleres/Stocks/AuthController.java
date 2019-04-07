@@ -1,10 +1,10 @@
-package Stocks.JWT;
+package Stocks.Controlleres.Stocks;
 
 import Stocks.Models.User;
 import Stocks.Services.UserService;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import net.bytebuddy.implementation.bytecode.Throw;
+
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -15,8 +15,6 @@ import javax.ws.rs.core.Response;
 public class AuthController {
     @Inject
     private UserService userService;
-
-
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)

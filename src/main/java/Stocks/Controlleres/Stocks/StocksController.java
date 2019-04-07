@@ -18,7 +18,7 @@ import java.util.List;
 
 @Path("Stocks")
 //@RolesAllowed("USER")
-@ServletSecurity
+
 public class StocksController {
    @Inject
    public Validator validator;

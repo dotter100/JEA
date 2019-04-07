@@ -1,6 +1,7 @@
 package Stocks.JWT;
 
 import Stocks.JWT.Authenticated.AuthenticatedUser;
+import Stocks.Models.Roles;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
@@ -11,18 +12,27 @@ import javax.inject.Inject;
 import javax.ws.rs.Priorities;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
+import javax.ws.rs.container.ResourceInfo;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-@JWT
+@JWT()
 @Provider
 @Priority(Priorities.AUTHENTICATION)
 public class AuthenticationFilter implements ContainerRequestFilter {
 
     private static final String REALM = "example";
     private static final String AUTHENTICATION_SCHEME = "Bearer";
+
+    @Context
+    private ResourceInfo resourceInfo;
 
     @Inject
     @AuthenticatedUser
@@ -83,6 +93,21 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                 .withIssuer("Bart")
                 .build(); //Reusable verifier instance
         DecodedJWT jwt = verifier.verify(token);
+        Method method =resourceInfo.getResourceMethod();
+        if( method != null){
+            JWT JWTContext = method.getAnnotation(JWT.class);
+            Roles permission =  JWTContext.Permissions();
+            if(permission != Roles.DEFAULT ) {
+                String roles = jwt.getClaim("Roles").asString();
+                Roles roleUser = Roles.valueOf(roles);
+
+                if (!permission.equals(roleUser)) {
+                    throw new Exception("no roles");
+
+                }
+
+            }
+        }
 
         userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
     }
