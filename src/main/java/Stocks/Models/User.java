@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name ="accounts")
+@Table(name ="account")
 @Cacheable(false)
 @NamedQueries({
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID"),
@@ -43,6 +43,16 @@ public class User {
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany
     private List<Portfolio> portfolios = new ArrayList<>();
+    @JsonIgnore
+    private String twofactor;
+    @JsonIgnore
+    public String getTwofactor() {
+        return twofactor;
+    }
+
+    public void setTwofactor(String twofactor) {
+        this.twofactor = twofactor;
+    }
 
     public User() {
 
