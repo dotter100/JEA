@@ -32,29 +32,29 @@ public class Portfolio {
 
     @Test
     public void GetPortfolios() {
-        Gson gson = new GsonBuilder().create();
-
-        User u = new User("TestName", "TestPassword");
-
-        u.AddPortfolios(new Stocks.Models.Portfolio("test"));
-
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(get(urlEqualTo("/JEAORM/Portfolio"))
-                .withHeader("Authorization", containing("Bearer"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody(gson.toJson(u.getPortfolios()))));
+//        Gson gson = new GsonBuilder().create();
+//
+//        User u = new User("TestName", "TestPassword");
+//
+//        u.AddPortfolios(new Stocks.Models.Portfolio("test"));
+//
+//        WireMock wiremock = new WireMock(8888);
+//
+//        wiremock.register(get(urlEqualTo("/JEAORM/Portfolio"))
+//                .withHeader("Authorization", containing("Bearer"))
+//                .willReturn(aResponse()
+//                        .withStatus(200)
+//                        .withBody(gson.toJson(u.getPortfolios()))));
 
 
         //given().when().get("JEAORM/CreateUser").then().statusCode(200);
-        given()
-                .port(8888)
+        given().baseUri("http://desktop-354os6s")
+                .port(8080)
                 .contentType("application/json")
-                .header(new Header("Authorization", "Bearer"))
-                .when().get("/JEAORM/Portfolio").then()
+                .header(new Header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VyIjoicXJjb2RlIiwiaXNzIjoiQmFydCIsIlJvbGVzIjoiVVNFUiIsIklEIjo0fQ.ATfFPRbHqhdiSfd0nWvtM14prlCxnlXyhHAdzRvFY_I"))
+                .when().get("/JEAORM/API/Portfolio").then()
                 .statusCode(200);
-        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/Portfolio")));
+        //wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/Portfolio")));
 
 
     }

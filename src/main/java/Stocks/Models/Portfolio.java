@@ -1,5 +1,8 @@
 package Stocks.Models;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +18,9 @@ public class Portfolio {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int ID;
     private String Name;
+    @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany
-    private List<BuyStock> stocks;
+    private List<BuyStock> stocks = new ArrayList<>();
 
 
     public Portfolio() {

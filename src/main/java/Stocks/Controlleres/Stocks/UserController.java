@@ -28,7 +28,7 @@ public class UserController {
     private UserService userService;
     @Path("")
     @GET
-    @JWT(Permissions = Roles.ADMIN)
+    @JWT(Permissions = Roles.DEFAULT)
     @Produces("application/json")
     public List<User> getUsers(){
         return userService.GetUsers();

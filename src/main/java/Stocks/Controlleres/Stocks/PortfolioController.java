@@ -7,6 +7,7 @@ import Stocks.JWT.Authenticated.AuthenticatedUser;
 import Stocks.JWT.JWT;
 import Stocks.Logic.Validator;
 import Stocks.Models.Portfolio;
+import Stocks.Models.Roles;
 import Stocks.Models.Stocks;
 import Stocks.Models.User;
 import Stocks.Services.PortfolioService;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @Path("Portfolio")
 
-@JWT
+@JWT(Permissions = Roles.DEFAULT)
 public class PortfolioController {
    @Inject
    public Validator validator;
@@ -31,24 +32,28 @@ public class PortfolioController {
     @AuthenticatedUser
     User user;
 
+    @JWT
     @GET
     @Produces("application/json")
     public List<Portfolio> GetPortfolios(){
-        return user.getPortfolios();
+     List<Portfolio> list = user.getPortfolios();
+
+        return list;
 
     }
 
-    @Path("name")
+    @Path("name/{id}")
     @POST
     @Produces("application/json")
-    public List<Portfolio> GetPortfolioName(String portfolioname){
+    public List<Portfolio> GetPortfolioName(@PathParam("id") String portfolioname){
+
         return portfolioService.GetPortfolio(portfolioname);
     }
-    @Path("ID")
+    @Path("/{id}")
     @POST
-    @Consumes("application/json")
+    //@Consumes("application/json")
     @Produces("application/json")
-    public List<Portfolio> GetPortfolioID(int id){
+    public List<Portfolio> GetPortfolioID(@PathParam("id") int id){
         return portfolioService.GetPortfolio(id);
     }
     @Path("Update")

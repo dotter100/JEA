@@ -46,6 +46,7 @@ public class UserService {
     }
 
     public User GetUserID(int id) {
-        return em.createNamedQuery("ID", User.class).setParameter("ID", id).getSingleResult();
+        User u = em.createNamedQuery("ID", User.class).setParameter("ID", id).getSingleResult();
+        return u;
     }
 }

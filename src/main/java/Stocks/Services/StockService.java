@@ -1,6 +1,7 @@
 package Stocks.Services;
 
 import Stocks.Models.Stocks;
+import Stocks.Models.User;
 import interceptor.UserInterceptor;
 
 import javax.ejb.Stateless;
@@ -25,5 +26,13 @@ public class StockService {
     public List<Stocks> GetStock(String name){
         TypedQuery<Stocks> query = em.createNamedQuery("stockname", Stocks.class).setParameter("name",name);
         return query.getResultList();
+    }
+
+    public void AddStock(Stocks stock){
+        em.getTransaction().begin();
+        em.persist(stock.getCompany());
+        em.persist(stock);
+        em.getTransaction().commit();
+        em.flush();
     }
 }

@@ -11,9 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ecc59ed0-1928-49d6-98af-4612a27c72d3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,39 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="27" column="105" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="105" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AuthenticationFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="280">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,20 +62,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
+      <file leaf-file-name="AuthentictedUserProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java">
+      <file leaf-file-name="StocksController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="501">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StocksWebsocket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,22 +99,35 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="138" column="21" lean-forward="true" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="21" />
+            <state relative-caret-position="250">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeBasedOneTimePasswordUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="69" column="47" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-244">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -125,20 +135,8 @@
       <file leaf-file-name="ApplicationConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Roles.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="357">
+              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -146,12 +144,11 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,8 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserControllerWeb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Logging/AuditModule.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/glassfish-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore.java" />
@@ -219,33 +214,35 @@
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/StocksTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/filters/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/JWTContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/JWT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/idk.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java" />
       </list>
     </option>
   </component>
@@ -287,7 +284,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -428,6 +424,14 @@
               <item name="JEA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JEAORM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JEA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -442,6 +446,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -461,12 +466,8 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Stocks.Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\JWT" />
@@ -475,14 +476,18 @@
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Stocks.Controlleres.Stocks" />
       <recent name="Stocks.Controlleres.Filter" />
       <recent name="Stocks.JWT.filters" />
       <recent name="Stocks.Services" />
-      <recent name="Stocks.Controlleres.Stocks" />
       <recent name="Stocks.Tests" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Stocks.Models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java\Stocks\Controlleres" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA\src\main\java" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\JEA" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -497,17 +502,212 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.Glassfish server">
+  <component name="RunManager" selected="GlassFish Server.idk">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Glassfish server" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.184.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Glassfish server" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.184.01" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="JEA:war">
+          <settings />
+        </artifact>
+        <artifact name="JEA:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JEA:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Seclab" type="GlassfishConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="GlassFish 5.191.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="HOST" value="192.168.25.110" />
+      <option name="LOCAL" value="false" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="JEA:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <data>
+          <option name="adminServerHost" value="" />
+          <option name="clusterName" value="" />
+          <option name="password" value="powerabusers" />
+          <option name="secured" value="true" />
+          <option name="stagingRemotePath" value="" />
+          <option name="transportHostId" value="" />
+          <option name="transportStagingTarget">
+            <TransportTarget>
+              <option name="id" value="ebf36f38-742c-4ce9-95d0-e0779f89a149" />
+              <id>ebf36f38-742c-4ce9-95d0-e0779f89a149</id>
+            </TransportTarget>
+          </option>
+          <option name="virtualServer" value="Domain1" />
+          <password>powerabusers</password>
+          <secured>true</secured>
+          <virtual-server>Domain1</virtual-server>
+          <admin-server-host />
+          <cluster-name />
+          <transport-target>
+            <TransportTarget>
+              <option name="id" value="ebf36f38-742c-4ce9-95d0-e0779f89a149" />
+              <id>ebf36f38-742c-4ce9-95d0-e0779f89a149</id>
+            </TransportTarget>
+          </transport-target>
+          <staging-path />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5538" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JEA:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="debug" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.191.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JEA:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JEA:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="idk" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.184.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JEA:war exploded">
           <settings />
@@ -573,57 +773,6 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="JEA:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="Seclab" type="GlassfishConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="GlassFish 5.191.0" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="HOST" value="192.168.25.110" />
-      <option name="LOCAL" value="false" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="JEA:war">
-          <settings />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <data>
-          <option name="adminServerHost" value="" />
-          <option name="clusterName" value="" />
-          <option name="password" value="powerabusers" />
-          <option name="secured" value="true" />
-          <option name="stagingRemotePath" value="" />
-          <option name="transportHostId" value="" />
-          <option name="transportStagingTarget">
-            <TransportTarget>
-              <option name="id" value="ebf36f38-742c-4ce9-95d0-e0779f89a149" />
-              <id>ebf36f38-742c-4ce9-95d0-e0779f89a149</id>
-            </TransportTarget>
-          </option>
-          <option name="virtualServer" value="Domain1" />
-          <password>powerabusers</password>
-          <secured>true</secured>
-          <virtual-server>Domain1</virtual-server>
-          <admin-server-host />
-          <cluster-name />
-          <transport-target>
-            <TransportTarget>
-              <option name="id" value="ebf36f38-742c-4ce9-95d0-e0779f89a149" />
-              <id>ebf36f38-742c-4ce9-95d0-e0779f89a149</id>
-            </TransportTarget>
-          </transport-target>
-          <staging-path />
-          <host-id />
-        </data>
-      </server-settings>
-      <predefined_log_file id="GlassFish" enabled="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="5538" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="JEA:war" />
         </option>
       </method>
     </configuration>
@@ -782,6 +931,8 @@
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.Glassfish server" />
+      <item itemvalue="GlassFish Server.debug" />
+      <item itemvalue="GlassFish Server.idk" />
       <item itemvalue="GlassFish Server.Seclab" />
       <item itemvalue="JUnit.StocksTest" />
       <item itemvalue="JUnit.StocksTest.GetStocksName" />
@@ -791,9 +942,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Portfolio.GetPortfolios" />
         <item itemvalue="JUnit.Portfolio" />
         <item itemvalue="JUnit.Portfolio.ADDPortfolios" />
-        <item itemvalue="JUnit.Portfolio.GetPortfolios" />
         <item itemvalue="JUnit.StocksTest.GetStocksName" />
         <item itemvalue="JUnit.StocksTest" />
       </list>
@@ -825,17 +976,14 @@
       <workItem from="1553596579483" duration="3292000" />
       <workItem from="1553954146743" duration="12542000" />
       <workItem from="1554373027269" duration="6788000" />
-      <workItem from="1554580344216" duration="18303000" />
+      <workItem from="1554580344216" duration="20901000" />
+      <workItem from="1554979816865" duration="7117000" />
+      <workItem from="1555234998749" duration="530000" />
+      <workItem from="1555311123646" duration="18635000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StocksTest_GetStocksName - 2019.03.25 at 10h 12m 43s.xml">
-      <configuration name="StocksTest.GetStocksName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StocksTest_GetStocksName - 2019.03.25 at 10h 16m 32s.xml">
-      <configuration name="StocksTest.GetStocksName" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StocksTest_GetStocksName - 2019.03.25 at 10h 17m 30s.xml">
       <configuration name="StocksTest.GetStocksName" configurationId="JUnit" />
     </history-entry>
@@ -860,9 +1008,15 @@
     <history-entry file="Portfolio - 2019.03.30 at 15h 26m 04s.xml">
       <configuration name="Portfolio" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Portfolio_GetPortfolios - 2019.04.15 at 09h 42m 36s.xml">
+      <configuration name="Portfolio.GetPortfolios" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Portfolio_GetPortfolios - 2019.04.15 at 10h 22m 18s.xml">
+      <configuration name="Portfolio.GetPortfolios" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189414000" />
+    <option name="totallyTimeSpent" value="218454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,7 +1032,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4437276" side_tool="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.48315412" side_tool="true" weight="0.3979975" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4967742" weight="0.32916147" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -890,18 +1044,18 @@
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47598568" weight="0.3979975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5168459" visible="true" weight="0.3979975" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4982079" weight="0.32916147" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47096774" weight="0.32916147" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7483871" weight="0.32916147" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5562724" visible="true" weight="0.32916147" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916147" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5562724" weight="0.32916147" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49964157" weight="0.32916147" />
       <window_info id="Persistence" order="2" sideWeight="0.5006258" side_tool="true" weight="0.2580645" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.22222222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.23297492" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.3297491" />
       <window_info id="Web" order="2" sideWeight="0.5051975" side_tool="true" weight="0.32544804" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49964157" weight="0.32916147" />
@@ -1033,30 +1187,6 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java</url>
           <line>90</line>
           <properties />
@@ -1092,6 +1222,30 @@
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Stocks/security/JWTAuthenticationMechanism.java</url>
           <line>120</line>
@@ -1109,11 +1263,16 @@
           <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="118" />
+      <option name="time" value="136" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
+      <expression>
+        <expression-string>4</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>&quot;USER&quot;</expression-string>
         <language-id>JAVA</language-id>
@@ -1127,54 +1286,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/security/AuthorizationIdentityStore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/security/JWTCredential.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/security/JWTRememberMeIdentityStore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/security/TokenProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/security/JWTAuthenticationMechanism.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/ApplicationConfig.java" />
-    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JeaDemo/Controlleres/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.3.0/java-jwt-3.3.0.jar!/com/auth0/jwt/algorithms/Algorithm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="40" column="167" selection-start-line="40" selection-start-column="167" selection-end-line="40" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.0.Final/validation-api-2.0.0.Final.jar!/javax/validation/constraints/AssertFalse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Credentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserControllerWeb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1188,29 +1299,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/TestIdentityStore2.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Company.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1222,37 +1314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="103" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -1260,63 +1321,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthenticatedUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/AuthController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Filter/CorsFilter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Filter/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/JWTContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/JWT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/JWTContext.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1324,34 +1331,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Logic/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1362,57 +1345,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/filters/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="561">
           <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1423,68 +1366,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="1491">
+          <caret line="101" column="41" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Valuta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Credentials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Tests/Portfolio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1103">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.28/jersey-common-2.28.jar!/org/glassfish/jersey/internal/AbstractRuntimeDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/Filter/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/JWT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/node/IntNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.3.0/java-jwt-3.3.0.jar!/com/auth0/jwt/JWTDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.3.0/java-jwt-3.3.0.jar!/com/auth0/jwt/impl/PayloadImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/node/NumericNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/JsonNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.3.0/java-jwt-3.3.0.jar!/com/auth0/jwt/impl/JsonNodeClaim.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="35" column="103" selection-start-line="35" selection-start-column="103" selection-end-line="35" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthenticatedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/org/jboss/logging/JDKLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/org/jboss/logging/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="473" column="187" selection-start-line="473" selection-start-column="187" selection-end-line="473" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/UserInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="119">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/Authenticated/AuthentictedUserProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="138" column="21" lean-forward="true" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="21" />
+        <state relative-caret-position="250">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="69" column="47" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="-244">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/AuthController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Resource/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="105" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1666,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JEA:war</last-edited>
+          <last-edited>JEA:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

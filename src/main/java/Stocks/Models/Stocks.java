@@ -1,16 +1,16 @@
 package Stocks.Models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 @Entity
 @NamedQuery(name = "stockname", query = "select  u  from Stocks u where u.name = :name")
 public class Stocks {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int ID;
 
     private int price;
-    @Id
+    @Column(unique = true)
     private String name;
     @ManyToOne
     private Company company;
@@ -29,6 +29,34 @@ public class Stocks {
 
 
     public Stocks(Valuta valuta) {
+        this.valuta = valuta;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public Valuta getValuta() {
+        return valuta;
+    }
+
+    public void setValuta(Valuta valuta) {
         this.valuta = valuta;
     }
 

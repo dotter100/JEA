@@ -40,7 +40,8 @@ public class User {
     public void setRole(Roles role) {
         this.role = role;
     }
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @JsonIgnore
+    @LazyCollection(LazyCollectionOption.TRUE)
     @OneToMany
     private List<Portfolio> portfolios = new ArrayList<>();
     @JsonIgnore
@@ -79,7 +80,7 @@ public class User {
         return ID;
     }
 
-
+    @JsonIgnore
     public List<Portfolio> getPortfolios() {
         return portfolios;
     }

@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@JWT()
+@JWT
 @Provider
 @Priority(Priorities.AUTHENTICATION)
 public class AuthenticationFilter implements ContainerRequestFilter {
@@ -61,6 +61,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
             validateToken(token);
 
         } catch (Exception e) {
+            e.printStackTrace();
             abortWithUnauthorized(requestContext);
         }
     }
@@ -97,7 +98,8 @@ public class AuthenticationFilter implements ContainerRequestFilter {
         if( method != null){
             JWT JWTContext = method.getAnnotation(JWT.class);
             Roles permission =  JWTContext.Permissions();
-            if(permission != Roles.DEFAULT ) {
+
+            if(permission != Roles.DEFAULT  && permission != null) {
                 String roles = jwt.getClaim("Roles").asString();
                 Roles roleUser = Roles.valueOf(roles);
 

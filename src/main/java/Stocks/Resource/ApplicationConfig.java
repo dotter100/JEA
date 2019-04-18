@@ -40,10 +40,7 @@ package Stocks.Resource;
 
 
 
-import Stocks.Controlleres.Stocks.PortfolioController;
-import Stocks.Controlleres.Stocks.StocksController;
-import Stocks.Controlleres.Stocks.UserController;
-import Stocks.Controlleres.Stocks.AuthController;
+import Stocks.Controlleres.Stocks.*;
 import Stocks.JWT.AuthenticationFilter;
 import Stocks.JWT.filters.CorsFilter;
 import org.glassfish.jersey.jackson.JacksonFeature;
@@ -70,6 +67,7 @@ public class ApplicationConfig extends Application {
         resources.add(CorsFilter.class);
         resources.add(JacksonFeature.class);
         resources.add(AuthenticationFilter.class);
+        //resources.add(StocksWebsocket.class);
 
     }
 }
