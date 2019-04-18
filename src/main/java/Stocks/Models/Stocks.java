@@ -61,6 +61,7 @@ public class Stocks {
     }
 
     public int getPrice() {
+
         return price;
     }
 
