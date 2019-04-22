@@ -2,6 +2,7 @@ package Stocks.Services;
 
 import Stocks.Models.Portfolio;
 import Stocks.Models.Stocks;
+import Stocks.Models.User;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -25,6 +26,7 @@ public class PortfolioService {
         TypedQuery<Portfolio> query = em.createNamedQuery("PortfolioName", Portfolio.class).setParameter("name",name);
         return query.getResultList();
     }
+
 
 
     public Boolean UpdatePortfolio(Portfolio portfolio){

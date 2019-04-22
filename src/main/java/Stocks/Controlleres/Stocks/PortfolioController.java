@@ -37,9 +37,7 @@ public class PortfolioController {
     @Produces("application/json")
     public List<Portfolio> GetPortfolios(){
      List<Portfolio> list = user.getPortfolios();
-
         return list;
-
     }
 
     @Path("name/{id}")

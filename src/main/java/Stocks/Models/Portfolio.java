@@ -1,5 +1,6 @@
 package Stocks.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
@@ -18,8 +19,9 @@ public class Portfolio {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int ID;
     private String Name;
+
     @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<BuyStock> stocks = new ArrayList<>();
 
 

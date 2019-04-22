@@ -41,8 +41,8 @@ public class User {
         this.role = role;
     }
     @JsonIgnore
-    @LazyCollection(LazyCollectionOption.TRUE)
-    @OneToMany
+
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<Portfolio> portfolios = new ArrayList<>();
     @JsonIgnore
     private String twofactor;
