@@ -1,22 +1,22 @@
 package Stocks.Models;
 
-import javax.persistence.Entity;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import javax.persistence.*;
 
 @Entity
-public class BuyStock extends Stocks {
-    public BuyStock() {
+public class BuyStock  {
 
-    }
 
-    public BuyStock(int price, String name, Company company) {
-        super(price, name, company);
-    }
-
-    public BuyStock(Valuta valuta) {
-        super(valuta);
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private int BuyPrice;
     private int Amount;
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @ManyToOne
+    private Stocks stock;
 
     public int getBuyPrice() {
         return BuyPrice;
@@ -32,5 +32,21 @@ public class BuyStock extends Stocks {
 
     public void setAmount(int amount) {
         Amount = amount;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Stocks getStock() {
+        return stock;
+    }
+
+    public void setStock(Stocks stock) {
+        this.stock = stock;
     }
 }
