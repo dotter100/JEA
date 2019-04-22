@@ -1,5 +1,6 @@
 package Stocks.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
@@ -17,6 +18,16 @@ public class BuyStock  {
     @LazyCollection(LazyCollectionOption.FALSE)
     @ManyToOne
     private Stocks stock;
+    @ManyToOne
+    private Portfolio portfolio;
+    @JsonIgnore
+    public Portfolio getPortfolio() {
+        return portfolio;
+    }
+
+    public void setPortfolio(Portfolio portfolio) {
+        this.portfolio = portfolio;
+    }
 
     public int getBuyPrice() {
         return BuyPrice;

@@ -39,7 +39,7 @@ public class PortfolioController {
      List<Portfolio> list = user.getPortfolios();
         return list;
     }
-
+    @JWT
     @Path("name/{id}")
     @POST
     @Produces("application/json")
@@ -47,6 +47,7 @@ public class PortfolioController {
 
         return portfolioService.GetPortfolio(portfolioname);
     }
+    @JWT
     @Path("/{id}")
     @POST
     //@Consumes("application/json")
@@ -61,5 +62,13 @@ public class PortfolioController {
     public boolean UpdatePortfolio(Portfolio portfolio){
         return portfolioService.UpdatePortfolio(portfolio);
     }
+
+ @JWT(Permissions = Roles.DEFAULT)
+ @Path("/add")
+ @POST
+ @Consumes("application/json")
+ public boolean AddPortfolio(Portfolio portfolio){
+     return portfolioService.AddPortfolio(portfolio,user.getID());
+ }
 
 }

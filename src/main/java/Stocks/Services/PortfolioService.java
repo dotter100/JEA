@@ -1,5 +1,6 @@
 package Stocks.Services;
 
+import Stocks.Models.BuyStock;
 import Stocks.Models.Portfolio;
 import Stocks.Models.Stocks;
 import Stocks.Models.User;
@@ -32,6 +33,23 @@ public class PortfolioService {
     public Boolean UpdatePortfolio(Portfolio portfolio){
         em.getTransaction().begin();
         em.merge(portfolio);
+        em.getTransaction().commit();
+        return true;
+    }
+
+    public Boolean AddPortfolio(Portfolio portfolio,int id) {
+
+        em.getTransaction().begin();
+        portfolio.setStocks(null);
+        User u = em.find(User.class, id);
+//        for (BuyStock b : portfolio.getStocks()){
+//            b.setPortfolio(portfolio);
+//           em.merge(b);
+//        }
+        portfolio.setUser(u);
+        u.AddPortfolios(portfolio);
+        //em.merge(portfolio);
+        em.persist(u);
         em.getTransaction().commit();
         return true;
     }

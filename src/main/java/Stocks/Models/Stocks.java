@@ -72,8 +72,4 @@ public class Stocks {
     public Company getCompany() {
         return company;
     }
-
-    public Valuta getValute() {
-        return valuta;
-    }
 }

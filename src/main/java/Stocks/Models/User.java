@@ -41,8 +41,7 @@ public class User {
         this.role = role;
     }
     @JsonIgnore
-
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, mappedBy = "user")
     private List<Portfolio> portfolios = new ArrayList<>();
     @JsonIgnore
     private String twofactor;

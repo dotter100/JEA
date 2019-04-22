@@ -21,9 +21,18 @@ public class Portfolio {
     private String Name;
 
     @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "portfolio", orphanRemoval = true)
     private List<BuyStock> stocks = new ArrayList<>();
+    @ManyToOne
+    private User user;
+    @JsonIgnore
+    public User getUser() {
+        return user;
+    }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Portfolio() {
     }
@@ -52,4 +61,11 @@ public class Portfolio {
         this.stocks.add(stock);
     }
 
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 }
