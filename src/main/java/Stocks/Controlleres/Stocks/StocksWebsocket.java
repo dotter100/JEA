@@ -31,7 +31,6 @@ public class StocksWebsocket {
 
 
 
-
     public StocksWebsocket() {
 
         //sendstocks(10);
@@ -62,6 +61,8 @@ public class StocksWebsocket {
     }
 
     private void sendstocks(int time,Session s){
+
+
         new java.util.Timer().schedule(
                 new java.util.TimerTask() {
                     @Override

@@ -32,6 +32,7 @@ public class PortfolioService {
 
     public Boolean UpdatePortfolio(Portfolio portfolio){
         em.getTransaction().begin();
+        em.persist(portfolio.getStocks());
         em.merge(portfolio);
         em.getTransaction().commit();
         return true;

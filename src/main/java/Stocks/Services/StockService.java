@@ -1,5 +1,7 @@
 package Stocks.Services;
 
+import Stocks.Models.BuyStock;
+import Stocks.Models.Portfolio;
 import Stocks.Models.Stocks;
 import Stocks.Models.User;
 import interceptor.UserInterceptor;
@@ -34,5 +36,19 @@ public class StockService {
         em.persist(stock);
         em.getTransaction().commit();
         em.flush();
+    }
+
+
+    public void AddBuystock(BuyStock stock, int id){
+//        em.getTransaction().begin();
+        Portfolio portfolio = em.find(Portfolio.class,id);
+        Stocks s = em.find(Stocks.class,stock.getStock().getID());
+        stock.setStock(s);
+
+        stock.setPortfolio(portfolio);
+        portfolio.ADDStocks(stock);
+        em.persist(portfolio);
+        //em.persist(portfolio);
+//        em.getTransaction().commit();
     }
 }

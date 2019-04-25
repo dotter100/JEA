@@ -55,6 +55,7 @@ public class PortfolioController {
     public List<Portfolio> GetPortfolioID(@PathParam("id") int id){
         return portfolioService.GetPortfolio(id);
     }
+    @JWT
     @Path("Update")
     @POST
     @Consumes("application/json")

@@ -5,9 +5,7 @@ package Stocks.Controlleres.Stocks;
 
 import Stocks.JWT.JWT;
 import Stocks.Logic.Validator;
-import Stocks.Models.Company;
-import Stocks.Models.Stocks;
-import Stocks.Models.User;
+import Stocks.Models.*;
 import Stocks.Services.StockService;
 import Stocks.Services.UserService;
 
@@ -30,17 +28,19 @@ public class StocksController {
 
     @Inject
     private StockService stockService;
-
+    //return a list of stocks public
     @GET
     @Produces("application/json")
     public Response GetStocks(@Context UriInfo uriInfo){
 
         Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder())
-                .rel("self").build();
+                .rel("self")
+                .type("GET").build();
 
         Link name = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder()
                 .path("name"))
-                .rel("StockName").build();
+                .rel("StockName")
+                .type("GET").build();
 
         return Response.ok(stockService.GetStocks()).links(self,name).build();
 
@@ -54,6 +54,17 @@ public class StocksController {
         Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder())
                 .rel("self").build();
         return Response.ok(stockService.GetStock(Stockname)).links(self).build();
+    }
+
+
+    @JWT
+    @Path("Update")
+    @POST
+    @Consumes("application/json")
+    @Produces("application/json")
+    public boolean UpdatePortfoliobuystock( BuyStock buyStock, @QueryParam("id") int id){
+        stockService.AddBuystock(buyStock,id);
+        return true;
     }
 
 }
