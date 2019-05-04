@@ -1,5 +1,7 @@
 package Stocks.Tests;
 
+import Stocks.Controlleres.Stocks.TimeBasedOneTimePasswordUtil;
+import Stocks.JWT.JWTLogic;
 import Stocks.Models.User;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -11,13 +13,17 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import io.restassured.http.Header;
 import io.restassured.response.Response;
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 
 import java.io.UnsupportedEncodingException;
+import java.security.GeneralSecurityException;
 
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
@@ -25,106 +31,62 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UserTest {
+    private String Name = "TestUser";
+    private String Password = "Testpassword";
+    private String twofactor = "NVQTEKSXG5IVUI22JEQX2VZWIU2XOQCH";
+
+    private static String jwttoken;
 
     @Rule
     public WireMockRule wiremockRule = new WireMockRule(8888);
 
     @Test
-    public void CreateUser(){
-        User u = new User("TestName", "TestPassword");
+    public void TestACreateUser(){
 
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(put(urlEqualTo("/JEAORM/CreateUser"))
-                .withHeader("Content-Type", containing("json"))
-                .withRequestBody(containing("TestName"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody("")));
-
-
-        //given().when().get("JEAORM/CreateUser").then().statusCode(200);
         given()
-                .port(8888)
-                .contentType("application/json")
-                .body(u)
-                .when().put("/JEAORM/CreateUser").then()
+                .port(8080)
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .formParam("Name", Name)
+                .formParam("password", Password).request()
+                .formParam("twofactor",twofactor)
+                .when().post("JEAORM/API/authentication/register").then()
                 .statusCode(200);
-        wiremock.verifyThat(WireMock.putRequestedFor(urlEqualTo("/JEAORM/CreateUser")));
-
-
 
     }
 
     @Test
-    public void Login() throws UnsupportedEncodingException {
-        User u = new User("TestName2", "TestPassword2");
-
-        Algorithm algorithm = Algorithm.HMAC256("secret");
-        String token = JWT.create()
-                .withIssuer("Bart")
-                .sign(algorithm);
-
-
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(post(urlEqualTo("/JEAORM/User/login"))
-                .withHeader("Content-Type", containing("json"))
-                .withRequestBody(containing("TestPassword2"))
-                .withRequestBody(containing("TestName2"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody(token)));
-
+    public void TestBLogin() throws Exception {
 
         //given().when().get("JEAORM/CreateUser").then().statusCode(200);
         Response response = given()
-                .port(8888)
-                .contentType("application/json")
-                .body(u)
-                .when().post("/JEAORM/User/login").then()
+                .port(8080)
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .formParam("username", Name)
+                .formParam("password", Password).request()
+                .formParam("verificationCode",TimeBasedOneTimePasswordUtil.generateCurrentNumber(twofactor))
+                .when().post("/JEAORM/API/authentication").then()
                 .statusCode(200).extract().response();
 
 
 
+        DecodedJWT jwt = JWTLogic.validateToken(response.getBody().print());
 
-        JWTVerifier verifier = JWT.require(algorithm)
-                .withIssuer("Bart")
-                .build(); //Reusable verifier instance
-        DecodedJWT jwt = verifier.verify(token);
-
+        jwttoken = response.getBody().print();
         assertNotNull(jwt);
-        wiremock.verifyThat(WireMock.postRequestedFor(urlEqualTo("/JEAORM/User/login")));
-
     }
 
     @Test
-    public void GetUser(){
-        User u = new User("TestName2", "TestPassword2");
+    public void TestCGetUser(){
 
-        Gson gson = new GsonBuilder().create();
-
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(get(urlEqualTo("/JEAORM/User/0"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withHeader("content-type", "application/json")
-                        .withBody(gson.toJson(u))));
-
-        Response response = given().pathParam("ID", 0)
-                .port(8888)
-                .headers("Content-Type", "application/json", "Accept", "application/json")
-                .when().get("/JEAORM/User/{ID}").then()
+        Response response = given()
+                .port(8080)
+                .header(new Header("Authorization", "Bearer " + jwttoken))
+                .when().get("/JEAORM/API/StockUser").then().statusCode(200)
                 .contentType("application/json").extract().response();
+        response.getBody().print();
 
-        User user = gson.fromJson(response.getBody().print(),User.class);
-
-
-        assertEquals(u.toString(), user.toString());
-        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/User/0")));
 
     }
 

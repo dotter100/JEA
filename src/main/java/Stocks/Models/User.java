@@ -64,6 +64,7 @@ public class User {
     public User(String name, String password, Roles role) {
         Name = name;
         Password = password;
+        this.role = role;
     }
 
     public String getName() {
