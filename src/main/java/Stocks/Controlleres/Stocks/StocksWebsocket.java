@@ -29,13 +29,7 @@ public class StocksWebsocket {
     private static Set<Session> peers = Collections.synchronizedSet(new HashSet());
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
-
-
-    public StocksWebsocket() {
-
-        //sendstocks(10);
-    }
-
+    //on message function for only getting stock information of 1 stock
     @OnMessage
     public String onMessage(String message, Session session) {
 
@@ -59,7 +53,7 @@ public class StocksWebsocket {
         sendstocks(10,session);
 
     }
-
+    // Timer for sending new updates
     private void sendstocks(int time,Session s){
 
 
