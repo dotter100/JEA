@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.*;
 
 @ApplicationScoped
-@ServerEndpoint("/Socket") //ws://localhost:8080/JEAORM/Socket/1
+@ServerEndpoint("/Socket") //ws://localhost:8080/JEAORM/Socket
 public class StocksWebsocket {
 
     @Inject
@@ -47,12 +47,11 @@ public class StocksWebsocket {
     @OnOpen
     public void onOpen(Session session) {
         System.out.println("mediator: opened websocket channel for client ");
-
         peers.add(session);
-
         sendstocks(10,session);
 
     }
+
     // Timer for sending new updates
     private void sendstocks(int time,Session s){
 
@@ -78,17 +77,6 @@ public class StocksWebsocket {
         );
     }
 
-    private void sendmessage(){
-        for(Session s : peers){
-            try {
-                s.getBasicRemote().sendObject(GSON.toJson(getstockprice()));
-            } catch (IOException e) {
-            } catch (EncodeException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
 
     private List<Stocks> getstockprice(){
         Random rand = new Random();
@@ -100,14 +88,14 @@ public class StocksWebsocket {
         return stocksList;
     }
 
-
+    //get stock info by name
     private List<Stocks> getstocks(String name){
         Random rand = new Random();
 
         List<Stocks> stocksList = stockService.GetStocks();
         List<Stocks> stockreturn = new ArrayList<>();
         for (Stocks s: stocksList){
-            if(s.getName().contains(name)) {
+            if(s.getName().toLowerCase().contains(name.toLowerCase())) {
                 int n = rand.nextInt(50);
                 s.setPrice(s.getPrice() + n);
                 stockreturn.add(s);
