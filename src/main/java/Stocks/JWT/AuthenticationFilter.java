@@ -85,16 +85,11 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                                 AUTHENTICATION_SCHEME + " realm=\"" + REALM + "\"")
                         .build());
     }
-
+    //validate jwt token and role permission check
     private void validateToken(String token) throws Exception {
-        // Check if the token was issued by the server and if it's not expired
-        // Throw an Exception if the token is invalid
-        Algorithm algorithm = Algorithm.HMAC256("secret");
-        JWTVerifier verifier = com.auth0.jwt.JWT.require(algorithm)
-                .withIssuer("Bart")
-                .build(); //Reusable verifier instance
-        DecodedJWT jwt = verifier.verify(token);
-        Method method =resourceInfo.getResourceMethod();
+
+        DecodedJWT jwt = JWTLogic.validateToken(token);
+        Method method = resourceInfo.getResourceMethod();
         if( method != null){
             JWT JWTContext = method.getAnnotation(JWT.class);
             Roles permission =  JWTContext.Permissions();
@@ -102,7 +97,6 @@ public class AuthenticationFilter implements ContainerRequestFilter {
             if(permission != Roles.DEFAULT  && permission != null) {
                 String roles = jwt.getClaim("Roles").asString();
                 Roles roleUser = Roles.valueOf(roles);
-
                 if (!permission.equals(roleUser)) {
                     throw new Exception("no roles");
 
@@ -110,7 +104,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 
             }
         }
-
+        // added a authenticateduser
         userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
     }
 }

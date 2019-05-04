@@ -1,5 +1,6 @@
 package Stocks.Controlleres.Stocks;
 
+import Stocks.JWT.JWTLogic;
 import Stocks.Models.Roles;
 import Stocks.Models.User;
 import Stocks.Services.UserService;
@@ -21,6 +22,7 @@ public class AuthController {
     @Inject
     private UserService userService;
 
+    //User login
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -31,7 +33,7 @@ public class AuthController {
         try {
             User u = authenticate(username, password);
             // Issue a token for the user
-            String token = issueToken(u);
+            String token = JWTLogic.issueToken(u);
 
             TimeBasedOneTimePasswordUtil t = new TimeBasedOneTimePasswordUtil();
             if (!t.validateCurrentNumber(u.getTwofactor(),verificationCode,3000)) {
@@ -45,15 +47,8 @@ public class AuthController {
         }
     }
 
-    private boolean isValidLong(String code) {
-        try {
-            Long.parseLong(code);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-        return true;
-    }
 
+    //Register a new user with 2FA
     @POST
     @Path("register")
     @Produces(MediaType.APPLICATION_JSON)
@@ -65,14 +60,14 @@ public class AuthController {
 
         u.setTwofactor(twofactor);
         try {
-//            String username = credentials.getUsername();
-//            String password = credentials.getPassword();
 
-            // Authenticate the user using the credentials provided
+            // Create user based on the given input
             userService.createUser(u);
+
+            //user authenticate
             User user = authenticate(u.getName(), password);
 
-            String token = issueToken(user);
+            String token = JWTLogic.issueToken(user);
             // Return the token on the response
 
 
@@ -83,9 +78,10 @@ public class AuthController {
         }
     }
 
+    // Authenticate against a database
+    // Throw an Exception if the credentials are invalid or user object from data is null
     private User authenticate(String username, String password) throws Exception {
-        // Authenticate against a database, LDAP, file or whatever
-        // Throw an Exception if the credentials are invalid
+
         User user = userService.GetUser(username,password);
         if(user != null){
             return user;
@@ -95,25 +91,4 @@ public class AuthController {
         }
     }
 
-    private String issueToken(User user) throws Exception {
-        // Issue a token (can be a random String persisted to a database or a JWT token)
-        // The issued token must be associated to a user
-        // Return the issued token
-        try {
-            Algorithm algorithm = Algorithm.HMAC256("secret");
-            String token = JWT.create()
-                    .withIssuer("Bart")
-                    .withClaim("User",user.getName())
-                    .withClaim("ID",user.getID())
-                    .withClaim("Roles" , String.valueOf(user.getRole()))
-                    .sign(algorithm);
-            return token;
-
-
-        }catch (Exception e){
-            throw new Exception();
-
-        }
-
-    }
 }
