@@ -3,7 +3,7 @@ package Stocks.Models;
 import javax.persistence.*;
 
 @Entity
-@NamedQuery(name = "stockname", query = "select  u  from Stocks u where u.name = :name")
+@NamedQuery(name = "stockname", query = "select  u  from Stocks u where u.name LIKE :name")
 public class Stocks {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

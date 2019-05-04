@@ -53,7 +53,11 @@ public class StocksController {
     public Response Getstockname(@PathParam("name") String Stockname, @Context UriInfo uriInfo){
         Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder())
                 .rel("self").build();
-        return Response.ok(stockService.GetStock(Stockname)).links(self).build();
+
+        List<Stocks> stocks = stockService.GetStock(Stockname);
+        if(stocks.size() <= 0)
+            return Response.status(Response.Status.NO_CONTENT).entity(stocks).links(self).build();
+        return Response.ok(stocks).links(self).build();
     }
 
 
