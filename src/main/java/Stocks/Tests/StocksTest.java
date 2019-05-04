@@ -30,34 +30,16 @@ import static org.junit.Assert.assertNotNull;
 
 public class StocksTest {
 
-    @Rule
-    public WireMockRule wiremockRule = new WireMockRule(8888);
+
 
     @Test
     public void GetStocks(){
-        List<Stocks> stocks = new ArrayList<>();
-        Stocks stock1 = new Stocks(10,"Stock1",new Company("apple"));
-        Stocks stock2 = new Stocks(102,"Stock2",new Company("windows"));
-        Stocks stock3 = new Stocks(20,"Stock3",new Company("microsoft"));
-        stocks.add(stock1);
-        stocks.add(stock2);
-        stocks.add(stock3);
 
-        Gson gson = new GsonBuilder().create();
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(get(urlEqualTo("/JEAORM/Stocks"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody(gson.toJson(stocks))));
-
-
-        //given().when().get("JEAORM/CreateUser").then().statusCode(200);
-        given()
-                .port(8888)
-                .when().get("/JEAORM/Stocks").then()
-                .statusCode(200);
-        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/Stocks")));
+        Response response  = given()
+                .port(8080)
+                .when().get("/JEAORM/API/Stocks").then()
+                .statusCode(200).extract().response();
+        response.getBody().print();
 
 
 
@@ -66,33 +48,32 @@ public class StocksTest {
 
     @Test
     public void GetStocksName(){
-        List<Stocks> stocks = new ArrayList<>();
-        Stocks stock1 = new Stocks(10,"Stock1",new Company("apple"));
-        Stocks stock2 = new Stocks(102,"Stock2",new Company("windows"));
-        Stocks stock3 = new Stocks(20,"Stock3",new Company("microsoft"));
-        stocks.add(stock1);
-        stocks.add(stock2);
-        stocks.add(stock3);
-
-        Gson gson = new GsonBuilder().create();
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(get(urlEqualTo("/JEAORM/Stocks/Stock1"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody(gson.toJson(stock1))));
 
 
-        //given().when().get("JEAORM/CreateUser").then().statusCode(200);
         Response response  = given()
-                .port(8888)
-                .when().get("/JEAORM/Stocks/Stock1").then()
+                .port(8080)
+                .when().get("/JEAORM/API/Stocks/Apple inc").then()
                 .statusCode(200).extract().response();
 
-        String t = response.getBody().print();
-        assertEquals(t, gson.toJson(stock1));
+        response.getBody().print();
 
-        wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/Stocks/Stock1")));
+        Response response2  = given()
+                .port(8080)
+                .when().get("/JEAORM/API/Stocks/Microsoft").then()
+                .statusCode(200).extract().response();
+        response2.getBody().print();
+
+
+
+
+
+        Response response3  = given()
+                .port(8080)
+                .when().get("/JEAORM/API/Stocks/Facebook21313").then()
+                .statusCode(204).extract().response();
+
+        response3.getBody().print();
+
 
 
 
