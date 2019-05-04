@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc59ed0-1928-49d6-98af-4612a27c72d3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +41,7 @@
       <file leaf-file-name="AuthenticationFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="1190">
               <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,22 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="e#1567#1568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PortfolioService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="731">
               <caret line="52" column="18" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="18" />
             </state>
           </provider>
@@ -80,7 +62,7 @@
       <file leaf-file-name="Stocks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
+            <state relative-caret-position="901">
               <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="e#715#716#0" expanded="true" />
@@ -105,7 +87,7 @@
       <file leaf-file-name="TimeBasedOneTimePasswordUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="510">
               <caret line="37" column="45" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,7 +99,7 @@
       <file leaf-file-name="BuyStock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="323">
               <caret line="23" column="33" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,11 +108,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StocksController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StocksController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="335">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +133,7 @@
       <file leaf-file-name="Portfolio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="221">
               <caret line="19" column="18" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="18" />
               <folding>
                 <element signature="e#1276#1277#0" expanded="true" />
@@ -153,7 +148,7 @@
       <file leaf-file-name="StockService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="646">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -162,13 +157,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StocksWebsocket.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StocksWebsocket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+            <state relative-caret-position="-124">
+              <caret line="42" column="77" selection-start-line="42" selection-start-column="77" selection-end-line="42" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1628#2196#0" expanded="true" />
+                <element signature="e#2195#2196#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -259,11 +256,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java" />
       </list>
     </option>
   </component>
@@ -304,8 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -475,6 +470,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1010,6 +1007,7 @@
       <workItem from="1555579610814" duration="18625000" />
       <workItem from="1555955226113" duration="16107000" />
       <workItem from="1556229097483" duration="6094000" />
+      <workItem from="1556959921790" duration="368000" />
     </task>
     <servers />
   </component>
@@ -1046,7 +1044,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259280000" />
+    <option name="totallyTimeSpent" value="259648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1059,6 +1057,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.48315412" side_tool="true" weight="0.3979975" />
@@ -1073,7 +1072,7 @@
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.5168459" visible="true" weight="0.3979975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5168459" weight="0.3979975" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4982079" weight="0.32916147" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47096774" weight="0.32916147" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -1081,16 +1080,16 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7483871" weight="0.32916147" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916147" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5562724" weight="0.32916147" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5562724" visible="true" weight="0.32916147" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49964157" weight="0.32916147" />
       <window_info id="Persistence" order="2" sideWeight="0.5006258" side_tool="true" weight="0.2580645" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.2437276" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948025" visible="true" weight="0.24731183" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.3297491" />
       <window_info id="Web" order="2" sideWeight="0.5051975" side_tool="true" weight="0.32544804" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49964157" weight="0.32916147" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49964157" weight="0.32916147" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1639,9 +1638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="43" column="82" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,20 +1658,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/PortfolioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="816">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#1567#1568#0" expanded="true" />
@@ -1685,7 +1670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Stocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
+        <state relative-caret-position="901">
           <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="e#715#716#0" expanded="true" />
@@ -1708,14 +1693,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/PortfolioService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="731">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="221">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="e#1276#1277#0" expanded="true" />
@@ -1728,7 +1713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Models/BuyStock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="323">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1738,18 +1723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/TimeBasedOneTimePasswordUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="510">
           <caret line="37" column="45" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1758,7 +1733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/JWT/AuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="1190">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1768,7 +1743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Services/StockService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="646">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1778,8 +1753,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="335">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stocks/Controlleres/Stocks/StocksWebsocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="42" column="77" selection-start-line="42" selection-start-column="77" selection-end-line="42" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1628#2196#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

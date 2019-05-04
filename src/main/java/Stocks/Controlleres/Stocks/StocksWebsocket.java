@@ -40,7 +40,7 @@ public class StocksWebsocket {
     public String onMessage(String message, Session session) {
 
         try {
-            session.getBasicRemote().sendObject(GSON.toJson(getstockprice()));
+            session.getBasicRemote().sendObject(GSON.toJson(getstocks(message)));
         } catch (IOException e) {
         } catch (EncodeException e) {
             e.printStackTrace();
@@ -104,6 +104,22 @@ public class StocksWebsocket {
             s.setPrice(s.getPrice()  + n);
         }
         return stocksList;
+    }
+
+
+    private List<Stocks> getstocks(String name){
+        Random rand = new Random();
+
+        List<Stocks> stocksList = stockService.GetStocks();
+        List<Stocks> stockreturn = new ArrayList<>();
+        for (Stocks s: stocksList){
+            if(s.getName().contains(name)) {
+                int n = rand.nextInt(50);
+                s.setPrice(s.getPrice() + n);
+                stockreturn.add(s);
+            }
+        }
+        return stockreturn;
     }
 
 
