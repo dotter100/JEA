@@ -29,6 +29,7 @@ public class StocksWebsocket {
     private static Set<Session> peers = Collections.synchronizedSet(new HashSet());
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
+
     //on message function for only getting stock information of 1 stock
     @OnMessage
     public String onMessage(String message, Session session) {
@@ -48,6 +49,7 @@ public class StocksWebsocket {
     public void onOpen(Session session) {
         System.out.println("mediator: opened websocket channel for client ");
         peers.add(session);
+        session.getBasicRemote().sendObject();
         sendstocks(10,session);
 
     }

@@ -20,6 +20,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 //import com.github.tomakehurst.wiremock.client.WireMock;
 //import com.github.tomakehurst.wiremock.junit.WireMockRule;
@@ -54,6 +55,7 @@ public class Portfolio {
                 .header(new Header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VyIjoicXJjb2RlIiwiaXNzIjoiQmFydCIsIlJvbGVzIjoiVVNFUiIsIklEIjo0fQ.ATfFPRbHqhdiSfd0nWvtM14prlCxnlXyhHAdzRvFY_I"))
                 .when().get("/JEAORM/API/Portfolio").then()
                 .statusCode(200);
+
         //wiremock.verifyThat(WireMock.getRequestedFor(urlEqualTo("/JEAORM/Portfolio")));
 
 
@@ -62,32 +64,17 @@ public class Portfolio {
 
     @Test
     public void ADDPortfolios() {
-        Gson gson = new GsonBuilder().create();
-
-        User u = new User("TestName", "TestPassword");
-
-        u.AddPortfolios(new Stocks.Models.Portfolio("test"));
-
-        WireMock wiremock = new WireMock(8888);
-
-        wiremock.register(put(urlEqualTo("/JEAORM/Portfolio"))
-                .withHeader("Authorization", containing("Bearer"))
-                .withRequestBody(containing("beta"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody("")));
 
 
-        //given().when().get("JEAORM/CreateUser").then().statusCode(200);
-        given()
-                .port(8888)
+        Response response = given()
+                .port(8080)
                 .contentType("application/json")
-                .header(new Header("Authorization", "Bearer"))
-                .body(new Stocks.Models.Portfolio("beta"))
-                .when().put("/JEAORM/Portfolio").then()
-                .statusCode(200);
-        wiremock.verifyThat(WireMock.putRequestedFor(urlEqualTo("/JEAORM/Portfolio")));
+                .header(new Header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VyIjoicXJjb2RlIiwiaXNzIjoiQmFydCIsIlJvbGVzIjoiVVNFUiIsIklEIjo0fQ.ATfFPRbHqhdiSfd0nWvtM14prlCxnlXyhHAdzRvFY_I"))
+                .body(new Stocks.Models.Portfolio("Test"))
+                .when().post("/JEAORM/API/Portfolio/add").then()
+                .statusCode(200).extract().response();
 
+        assertEquals("True", response.getBody().print());
 
     }
 

@@ -16,6 +16,7 @@ import Stocks.Services.StockService;
 import javax.inject.Inject;
 import javax.servlet.annotation.ServletSecurity;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("Portfolio")
@@ -71,5 +72,20 @@ public class PortfolioController {
  public boolean AddPortfolio(Portfolio portfolio){
      return portfolioService.AddPortfolio(portfolio,user.getID());
  }
+
+
+
+
+ @JWT(Permissions = Roles.DEFAULT)
+ @Path("/remove/{id}")
+ @DELETE
+ public Response Remove(@PathParam("id") int id){
+     if(portfolioService.Remove(id,user.getID()))
+      return Response.ok().build();
+  return Response.status(Response.Status.NOT_FOUND).build();
+ }
+
+
+
 
 }

@@ -9,6 +9,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.sound.sampled.Port;
 import java.util.List;
 
 @Stateless
@@ -53,5 +54,19 @@ public class PortfolioService {
         em.persist(u);
         em.getTransaction().commit();
         return true;
+    }
+
+
+
+    public Boolean Remove(int id,int user){
+        Portfolio portfolio = em.find(Portfolio.class,id);
+        if(portfolio.getUser().getID() == user){
+            portfolio.setUser(null);
+            em.persist(portfolio);
+            //em.remove(portfolio);
+            return true;
+        }
+
+        return false;
     }
 }
