@@ -140,7 +140,7 @@
         <payara.adminPort>4848</payara.adminPort>
         <payara.username>admin</payara.username>
         <payara.password></payara.password>
-        <payara.hostname>localhost</payara.hostname>
+        <payara.hostname>192.168.1.26</payara.hostname>
         <payara.domainName>domain1</payara.domainName>
         <payara.home></payara.home>
         <payara.domainDir>${payara.home}/glassfish/domains</payara.domainDir>
