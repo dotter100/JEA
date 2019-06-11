@@ -15,9 +15,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 <name>Cargo Maven Example</name>
-   
-
-    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
