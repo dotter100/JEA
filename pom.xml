@@ -259,7 +259,7 @@
                                 <dependency>
                                     <groupId>org.glassfish.main.deployment</groupId>
                                     <artifactId>deployment-client</artifactId>
-                                    <version>5.0</version>
+                                    <version>5.1</version>
                                 </dependency>            
                             </dependencies>
                         </plugin>
