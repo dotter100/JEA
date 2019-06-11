@@ -49,7 +49,6 @@ public class StocksWebsocket {
     public void onOpen(Session session) {
         System.out.println("mediator: opened websocket channel for client ");
         peers.add(session);
-        session.getBasicRemote().sendObject();
         sendstocks(10,session);
 
     }
